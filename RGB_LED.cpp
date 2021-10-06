@@ -42,3 +42,24 @@ void RGB_LED::ClrBlue(void)
 {
     digitalWrite(this->blue_pin, LOW);
 }
+
+void RGB_LED::RGB_COLOR(unsigned char color)
+{
+    if((color & RED) != 0){
+        this->SetRed();
+    }else{
+        this->ClrRed();
+    }
+
+    if((color & GREEN) != 0){
+        this->SetGreen();
+    }else{
+        this->ClrGreen();
+    }
+
+    if((color & BLUE) != 0){
+        this->SetBlue();
+    }else{
+        this->ClrBlue();
+    }
+}

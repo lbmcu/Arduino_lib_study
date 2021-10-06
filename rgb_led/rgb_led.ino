@@ -7,9 +7,16 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  led.SetRed();
+  led.RGB_COLOR(RED);
   delay(500);
-  led.ClrRed();
-  delay(200);
-  
+  led.RGB_COLOR(GREEN);
+  delay(500);
+  led.RGB_COLOR(BLUE);
+  delay(500);
+  led.RGB_COLOR(YELLOW);
+  delay(500);
+  led.RGB_COLOR(PURPLE);
+  delay(500);
+  led.RGB_COLOR(CYAN);
+  delay(500);
 }
