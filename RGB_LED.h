@@ -16,7 +16,7 @@ private:
     unsigned int green_pin;
     unsigned int blue_pin;
 public:
-    void InitRGB(unsigned int r, unsigned int g, unsigned int b);
+    RGB_LED(unsigned int r, unsigned int g, unsigned int b); //构造函数
     void SetRed(void);
     void ClrRed(void);
     void SetGreen(void);

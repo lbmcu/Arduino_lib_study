@@ -1,6 +1,6 @@
 #include "RGB_LED.h"
 
-void RGB_LED::InitRGB(unsigned int r, unsigned int g, unsigned int b)
+RGB_LED::RGB_LED(unsigned int r, unsigned int g, unsigned int b)
 {
     pinMode(r, OUTPUT);
     pinMode(g, OUTPUT);

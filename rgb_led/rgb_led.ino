@@ -1,8 +1,8 @@
 #include "RGB_LED.h"
-RGB_LED led;
+
+RGB_LED led(4,5,6);
 
 void setup() {
-  led.InitRGB(4,5,6);
 }
 
 void loop() {
